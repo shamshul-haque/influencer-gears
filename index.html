@@ -37,19 +37,21 @@
   </head>
   <body class="font-poppins">
     <header>
-        <!-- navbar section -->
-      <nav class="max-w-screen-xl mx-auto px-4 md:px-8 lg:px-16 mt-5">
+      <!-- navbar section -->
+      <nav class="max-w-screen-xl mx-auto px-4 md:px-8 lg:px-16 mt-10">
         <div class="flex justify-between items-center">
           <!-- logo title -->
           <div>
-            <a href="#" class="text-xl md:text-2xl font-bold"
+            <a href="#" class="text-xl md:text-2xl font-bold text-black"
               >Influencer Gears</a
             >
           </div>
 
           <!-- menu for large device -->
           <div class="hidden lg:block">
-            <ul class="flex gap-5 font-semibold">
+            <ul
+              class="flex gap-5 font-semibold text-sm md:text-base text-slate-500"
+            >
               <li><a href="#">Home</a></li>
               <li><a href="#">Products</a></li>
               <li><a href="#">Sign up</a></li>
@@ -82,7 +84,7 @@
             </label>
             <ul
               tabindex="0"
-              class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box right-10 w-32 font-semibold"
+              class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box right-10 w-32 font-semibold text-sm md:text-base text-slate-500"
             >
               <li><a href="#">Home</a></li>
               <li><a href="#">Products</a></li>
@@ -100,6 +102,41 @@
           </div>
         </div>
       </nav>
+
+      <!-- banner section -->
+      <section class="max-w-screen-xl mx-auto px-4 md:px-8 lg:px-16 mt-10">
+        <div class="flex flex-col lg:flex-row gap-10 items-center">
+          <!-- content -->
+          <div class="flex-1 space-y-3 text-center lg:text-left">
+            <h2 class="font-bold text-3xl md:text-5xl text-black">
+              Start your Journey as Influencer
+            </h2>
+            <p class="font-semibold text-sm md:text-base text-slate-500">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sem
+              vestibulum sed scelerisque eros. Lectus faucibus.
+            </p>
+            <button
+              class="btn bg-pink-600 rounded-full normal-case font-semibold text-sm md:text-base text-white"
+            >
+              Prebook Now
+            </button>
+          </div>
+
+          <!-- image -->
+          <div class="flex-1 relative">
+            <img
+              src="./assets/images/circle.svg"
+              alt="circle"
+              class="w-full h-full object-fill"
+            />
+            <img
+              src="./assets/images/main-camera.png"
+              alt="main-camera"
+              class="absolute top-16 lg:top-32 left-16 lg:left-32 w-40 lg:w-80"
+            />
+          </div>
+        </div>
+      </section>
     </header>
   </body>
 </html>
