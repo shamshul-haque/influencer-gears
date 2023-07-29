@@ -1,11 +1,105 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Influencer Gears</title>
-</head>
-<body>
-    
-</body>
+    <!-- daisy ui cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <!-- poppins font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- tailwind css cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- font-awesome kit -->
+    <script
+      src="https://kit.fontawesome.com/b94d418c48.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- custom css -->
+    <style>
+      .font-poppins {
+        font-family: "Poppins", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="font-poppins">
+    <header>
+        <!-- navbar section -->
+      <nav class="max-w-screen-xl mx-auto px-4 md:px-8 lg:px-16 mt-5">
+        <div class="flex justify-between items-center">
+          <!-- logo title -->
+          <div>
+            <a href="#" class="text-xl md:text-2xl font-bold"
+              >Influencer Gears</a
+            >
+          </div>
+
+          <!-- menu for large device -->
+          <div class="hidden lg:block">
+            <ul class="flex gap-5 font-semibold">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Products</a></li>
+              <li><a href="#">Sign up</a></li>
+              <li><a href="#">Log In</a></li>
+              <li>
+                <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- menubar for small device -->
+          <div class="dropdown block lg:hidden">
+            <label tabindex="0" class="btn btn-ghost px-0">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                class="inline-block w-5 h-5 stroke-current"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                ></path>
+              </svg>
+            </label>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box right-10 w-32 font-semibold"
+            >
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Products</a></li>
+              <li><a href="#">Sign up</a></li>
+              <li><a href="#">Log In</a></li>
+              <div class="flex justify-center">
+                <li>
+                  <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                </li>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+  </body>
 </html>
